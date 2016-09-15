@@ -15,18 +15,21 @@ class Perceptron:
         )
 
     def feed_forward(self, inputs):
-        return np.sum(inputs * self.weights)
+        return np.dot(inputs, self.weights)
+#        return np.sum(inputs * self.weights)
     
-    def activation_function(self, value):
-        if value > self.activation_threshold:
-            return 1
-        return 0
+    #def activation_function(self, value):
+    #    if value > self.activation_threshold:
+    #        return 1
+    #    return 0
 
     def activate_neuron(self, inputs):
         value = self.feed_forward(inputs)
-        return self.activation_function(value)
+        return value
+        #return self.activation_function(value)
 
     def train(self, inputs, target):
         attempt = self.activate_neuron(inputs)
         error = target - attempt
         self.weights += inputs * error 
+
