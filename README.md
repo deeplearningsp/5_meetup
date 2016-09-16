@@ -21,7 +21,7 @@ cd dl-docker
 
 docker build -t floydhub/dl-docker:cpu -f Dockerfile.cpu .
 
-# Trocar o /sharedfolder para a localizacao onde você quer salvar os notebooks na sua maquina
+ # Trocar o /sharedfolder para a localizacao onde você quer salvar os notebooks na sua maquina
 docker run -it -p 8888:8888 -p 6006:6006 -v /sharedfolder:/root/sharedfolder floydhub/dl-docker:cpu bash
 
 jupyter notebook /root/sharedfolder/
@@ -35,7 +35,7 @@ cd dl-docker
 
 docker build -t floydhub/dl-docker:gpu -f Dockerfile.gpu .
 
-# Trocar o /sharedfolder para a localizacao onde você quer salvar os notebooks na sua maquina
+ # Trocar o /sharedfolder para a localizacao onde você quer salvar os notebooks na sua maquina
 nvidia-docker run -it -p 8888:8888 -p 6006:6006 -v /sharedfolder:/root/sharedfolder floydhub/dl-docker:gpu bash
 
 jupyter notebook /root/sharedfolder/
