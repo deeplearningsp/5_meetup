@@ -66,3 +66,7 @@ nvidia-docker run -it -p 8888:8888 -p 6006:6006 -v /sharedfolder:/root/sharedfol
 
 jupyter notebook /root/sharedfolder/
 ```
+
+## Acessando o notebook
+
+http://localhost:8888/
