@@ -13,7 +13,7 @@ Imagem docker utilizada: https://github.com/saiprashanths/dl-docker
 
 ### Passos para montar e utilizar a imagem
 
-#### Se sua maquina NÃO tem uma boa placa de vídeo:
+**Se sua maquina NÃO tem uma boa placa de vídeo:**
 
 ```
 git clone https://github.com/saiprashanths/dl-docker.git
@@ -27,7 +27,7 @@ docker run -it -p 8888:8888 -p 6006:6006 -v /sharedfolder:/root/sharedfolder flo
 jupyter notebook /root/sharedfolder/
 ```
 
-#### Se sua maquina NÃO tem uma boa placa de vídeo:
+**Se sua maquina TEM uma boa placa de vídeo:**
 
 ```
 git clone https://github.com/saiprashanths/dl-docker.git
@@ -44,7 +44,7 @@ jupyter notebook /root/sharedfolder/
 ## Utilizando o ambiente após a primeira vez
 
 
-#### Se sua maquina NÃO tem uma boa placa de vídeo:
+**Se sua maquina NÃO tem uma boa placa de vídeo:**
 
 ```
 # Trocar o /sharedfolder para a localizacao onde você quer salvar os notebooks na sua maquina
@@ -53,7 +53,7 @@ docker run -it -p 8888:8888 -p 6006:6006 -v /sharedfolder:/root/sharedfolder flo
 jupyter notebook /root/sharedfolder/
 ```
 
-#### Se sua maquina NÃO tem uma boa placa de vídeo:
+**Se sua maquina TEM uma boa placa de vídeo:**
 
 ```
 # Trocar o /sharedfolder para a localizacao onde você quer salvar os notebooks na sua maquina
